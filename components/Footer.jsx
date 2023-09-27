@@ -5,7 +5,7 @@ import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>&copy; 2023 SP Headphoners All rights reserved!</p>
+      <p>&copy; 2023 SP Headphones All rights reserved!</p>
       <p className="icons">
         <Link href="https://linkedin.com/in/shahanawaz-pathan">
           <a target="_blank" rel="noopener noreferrer">

@@ -10,7 +10,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={urlFor(image && image[0])} alt="product-image" width={250} height={250} className="product-image" />
           <p className="product-name">{name}</p>
-          <p className="product-price">${price}</p>
+          <p className="product-price">&#8377;{price}</p>
         </div>
       </Link>
     </div>
