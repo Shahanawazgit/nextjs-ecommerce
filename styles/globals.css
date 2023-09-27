@@ -101,7 +101,7 @@ span.text-red {
   right: -8px;
   font-size: 12px;
   color: #eee;
-  background-color: #f02d34;
+  background-color: rgb(240, 45, 52);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -176,21 +176,25 @@ span.text-red {
 .hero-banner-container h3 {
   font-size: 4rem;
   margin-top: 4px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-banner-container h1 {
   color: white;
   font-size: 10em;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-banner-image {
   position: absolute;
-  top: 0%;
-  right: 20%;
-  width: 450px;
-  height: 450px;
+  top: -5%;
+  right: 23%;
+  width: 800px;
+  height: 550px;
 }
 
 .desc {
@@ -235,7 +239,7 @@ span.text-red {
 }
 
 .footer-banner-container {
-  padding: 100px 40px;
+  padding: 75px 40px 100px;
   background-color: #f02d34;
   border-radius: 15px;
   position: relative;
@@ -249,6 +253,7 @@ span.text-red {
 .banner-desc {
   display: flex;
   justify-content: space-between;
+  gap: 300px;
 }
 
 .banner-desc button {
@@ -263,6 +268,16 @@ span.text-red {
   cursor: pointer;
 }
 
+.banner-desc .left {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-desc .right {
+  position: relative;
+  z-index: 2;
+}
+
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 80px;
@@ -270,15 +285,17 @@ span.text-red {
 }
 
 .banner-desc .left p {
-  margin: 18px;
+  margin: 15px 30px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
   top: -25%;
   left: 25%;
+  width: 650px;
+  height: 550px;
 }
 
 .banner-desc .right {
@@ -697,9 +714,17 @@ span.text-red {
 }
 
 /* Resposiveness */
+@media screen and (max-width: 1200px) {
+  .hero-banner-container {
+    height: 600px;
+    width: 116%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .hero-banner-container {
     height: 560px;
+    padding: 75px 25px;
   }
 
   .hero-banner-image {
@@ -753,7 +778,7 @@ span.text-red {
   }
 
   .hero-banner-container h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .hero-banner-container h3 {
