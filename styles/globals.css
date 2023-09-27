@@ -74,9 +74,12 @@ span.text-red {
   margin-left: 6px;
 }
 
-.logo {
+.logo-icon {
   color: gray;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .cart-icon {
