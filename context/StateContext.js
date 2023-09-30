@@ -52,15 +52,19 @@ export const StateContext = ({ children }) => {
     foundProduct = cartItems.find((item) => item._id === id);
     index = cartItems.findIndex((product) => product._id === id);
 
-    const newCartItemes = cartItems.filter((item) => item._id !== id);
+    const newCartItems = [...cartItems]; // for mutating the array in place
 
-    if (value === "inc") {
-      setCartItems([...newCartItemes, { ...foundProduct, quantity: foundProduct.quantity + 1 }]);
+    if(value === 'inc') {
+      foundProduct.quantity += 1;
+      newCartItems[index] = foundProduct;  // prevents reordering
+      setCartItems(newCartItems)
       setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price);
       setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
     } else if (value === "dec") {
       if (foundProduct.quantity > 1) {
-        setCartItems([...newCartItemes, { ...foundProduct, quantity: foundProduct.quantity - 1 }]);
+        foundProduct.quantity -= 1;
+        newCartItems[index] = foundProduct
+        setCartItems(newCartItems)
         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price);
         setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
       }

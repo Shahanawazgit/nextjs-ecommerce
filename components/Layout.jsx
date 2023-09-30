@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
-        <title>Next.js eCommerce</title>
+        <title>TechShop | eCommerce store for Tech Gadgets</title>
       </Head>
       <header>
         <Navbar />
