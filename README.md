@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to my full-stack e-commerce web app built with Next.js, Sanity, and Stripe
 
-## Getting Started
+## Introduction
+Experience seamless tech shopping with my Next.js-powered full-stack e-commerce web app. The sleek front end ensures a smooth user experience, while the robust backend, managed by Sanity, guarantees content management excellence. Secure payments are handled through the trusted Stripe gateway, providing a safe and convenient shopping experience for all.
 
-First, run the development server:
+# Home Page
+![techshop-ecommerce](https://github.com/Shahanawazgit/techshop-ecommerce-nextjs/assets/139430501/d7591caf-f3ac-401d-a4b9-f04be7360ea5)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Product Detail Page
+![techshop-product-detail](https://github.com/Shahanawazgit/techshop-ecommerce-nextjs/assets/139430501/7b03a637-f728-42f2-8781-b7e2f418435c)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Cart Page
+![techshop-cart](https://github.com/Shahanawazgit/techshop-ecommerce-nextjs/assets/139430501/608adba3-b737-41de-a4f3-9c52160f50d7)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Checkout Page
+![techshop-checkout-stripe](https://github.com/Shahanawazgit/techshop-ecommerce-nextjs/assets/139430501/69762f67-6c45-4f6d-9a38-ea71e4b1003c)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Order Placed Success Page
+![techshop-orderPlaced-success](https://github.com/Shahanawazgit/techshop-ecommerce-nextjs/assets/139430501/e0caddfb-bd18-49ac-92d8-8b40cefa3e14)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Checkout the project - https://techshop-ecommerce-nextjs.vercel.app
