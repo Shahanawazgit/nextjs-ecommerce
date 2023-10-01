@@ -171,7 +171,7 @@ span.text-red {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  z-index: 10000 !important;
+  z-index: 2;
   position: relative;
 }
 
@@ -505,6 +505,7 @@ span.text-red {
 
 .small-images-container {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -800,6 +801,23 @@ span.text-red {
   }
 }
 
+@media screen and (max-width: 930px) {
+  .product-detail-desc .buttons {
+    gap: 20px;
+  }
+
+  .buttons .add-to-cart {
+    width: 50%;
+    height: fit-content;
+    padding: 10px 10px;
+  }
+
+  .buttons .buy-now {
+    width: 50%;
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .hero-banner-container {
     padding: 50px 20px 5px;
@@ -865,6 +883,7 @@ span.text-red {
 
   .product-detail-container {
     margin: 20px;
+    justify-content: center;
   }
 
   .item-desc .flex {
@@ -1012,6 +1031,10 @@ span.text-red {
 
   .footer-banner-image {
     left: -20%;
+  }
+
+  .cart-container {
+    width: 100%;
   }
 }
 
