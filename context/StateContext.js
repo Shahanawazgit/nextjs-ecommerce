@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { toast } from "react-hot-toast";
 
 const Context = createContext();
@@ -41,11 +41,11 @@ export const StateContext = ({ children }) => {
   const onRemove = (product) => {
     foundProduct = cartItems.find((item) => item._id === product._id);
 
-    const newCartItemes = cartItems.filter((item) => item._id !== product._id);
+    const newCartItems = cartItems.filter((item) => item._id !== product._id);
 
     setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price * foundProduct.quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - foundProduct.quantity);
-    setCartItems(newCartItemes);
+    setCartItems(newCartItems);
   };
 
   const toggleCartItemQuantity = (id, value) => {
@@ -54,17 +54,17 @@ export const StateContext = ({ children }) => {
 
     const newCartItems = [...cartItems]; // for mutating the array in place
 
-    if(value === 'inc') {
+    if (value === "inc") {
       foundProduct.quantity += 1;
-      newCartItems[index] = foundProduct;  // prevents reordering
-      setCartItems(newCartItems)
+      newCartItems[index] = foundProduct; // prevents reordering
+      setCartItems(newCartItems);
       setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price);
       setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
     } else if (value === "dec") {
       if (foundProduct.quantity > 1) {
         foundProduct.quantity -= 1;
-        newCartItems[index] = foundProduct
-        setCartItems(newCartItems)
+        newCartItems[index] = foundProduct;
+        setCartItems(newCartItems);
         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price);
         setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
       }

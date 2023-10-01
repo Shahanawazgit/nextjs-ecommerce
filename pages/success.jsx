@@ -13,6 +13,7 @@ const Success = () => {
     setTotalPrice(0);
     setTotalQuantities(0);
     runFireworks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
